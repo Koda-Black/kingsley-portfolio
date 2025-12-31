@@ -6,6 +6,25 @@ import { ExternalLink, Github, Zap, ArrowUpRight } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
+      title: "FarmShare Marketplace",
+      description:
+        "Agricultural pooled-buying marketplace connecting farmers directly with buyers across Nigeria. Features real-time pool tracking, secure payments, vendor verification, and a comprehensive dashboard for both buyers and vendors. Built with modern UI/UX and seamless user experience.",
+      image:
+        "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=600&fit=crop",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "NestJS", "PostgreSQL"],
+      links: {
+        live: "https://farmshare-marketplace.vercel.app",
+        github: "https://github.com/Koda-Black/farmshare-marketplace-v2",
+      },
+      stats: [
+        { label: "Savings", value: "60%" },
+        { label: "Pools", value: "500+" },
+        { label: "Vendors", value: "150+" },
+      ],
+      featured: true,
+      color: "from-green-500 to-emerald-500",
+    },
+    {
       title: "Fitnessspace Platform",
       description:
         "Comprehensive wellness platform enabling users to track fitness goals, access personalized workout plans, and connect with trainers. Serving 50K+ active users with real-time analytics and AI-powered recommendations.",
