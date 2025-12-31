@@ -6,6 +6,24 @@ import { ExternalLink, Github, Zap, ArrowUpRight } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
+      title: "DevRise Academy",
+      description:
+        "Comprehensive coding academy platform empowering aspiring developers with structured learning paths, hands-on projects, and mentorship. Features interactive courses, progress tracking, community forums, and career guidance to help students transition into tech careers.",
+      image:
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
+      tags: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
+      links: {
+        live: "https://thedevrise.com",
+      },
+      stats: [
+        { label: "Students", value: "500+" },
+        { label: "Courses", value: "20+" },
+        { label: "Success Rate", value: "95%" },
+      ],
+      featured: true,
+      color: "from-orange-500 to-amber-500",
+    },
+    {
       title: "FarmShare Marketplace",
       description:
         "Agricultural pooled-buying marketplace connecting farmers directly with buyers across Nigeria. Features real-time pool tracking, secure payments, vendor verification, and a comprehensive dashboard for both buyers and vendors. Built with modern UI/UX and seamless user experience.",
