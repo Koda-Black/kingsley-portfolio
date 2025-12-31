@@ -50,7 +50,7 @@ export default function Projects() {
       image:
         "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
       tags: ["React", "React Native", "Node.js", "MongoDB", "GCP"],
-      links: { live: "https://geneus.dev" },
+      links: { live: "https://yarnaclient.onrender.com" },
       stats: [
         { label: "Users", value: "200K+" },
         { label: "Apps", value: "15+" },
@@ -67,7 +67,7 @@ export default function Projects() {
         "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",
       tags: ["Node.js", "MongoDB", "Express", "Stripe"],
       links: {
-        live: "https://natours.us",
+        live: "https://natours-us.onrender.com",
         github: "https://github.com/Koda-Black",
       },
       stats: [
