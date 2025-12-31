@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = 'light' | 'dark';
+type Theme = "light" | "dark";
 
 type ThemeContextType = {
   theme: Theme;
@@ -13,21 +13,23 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 function applyTheme(theme: Theme) {
   const root = document.documentElement;
-  if (theme === 'dark') {
-    root.classList.add('dark');
+  if (theme === "dark") {
+    root.classList.add("dark");
   } else {
-    root.classList.remove('dark');
+    root.classList.remove("dark");
   }
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark');
+  const [theme, setTheme] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme | null;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    const savedTheme = localStorage.getItem("theme") as Theme | null;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
     setTheme(initialTheme);
     applyTheme(initialTheme);
     setMounted(true);
@@ -40,14 +42,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, [theme, mounted]);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+    const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   // Prevent flash of wrong theme
   if (!mounted) {
-    return <div style={{ visibility: 'hidden' }}>{children}</div>;
+    return <div style={{ visibility: "hidden" }}>{children}</div>;
   }
 
   return (
@@ -60,7 +62,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 export function useTheme() {
   const context = useContext(ThemeContext);
   if (context === undefined) {
-    return { theme: 'dark' as Theme, toggleTheme: () => {} };
+    return { theme: "dark" as Theme, toggleTheme: () => {} };
   }
   return context;
 }
