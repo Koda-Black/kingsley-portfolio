@@ -9,8 +9,7 @@ export default function Projects() {
       title: "DevRise Academy",
       description:
         "Comprehensive coding academy platform empowering aspiring developers with structured learning paths, hands-on projects, and mentorship. Features interactive courses, progress tracking, community forums, and career guidance to help students transition into tech careers.",
-      image:
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
+      image: "/devrise.png",
       tags: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
       links: {
         live: "https://thedevrise.com",
@@ -27,8 +26,7 @@ export default function Projects() {
       title: "FarmShare Marketplace",
       description:
         "Agricultural pooled-buying marketplace connecting farmers directly with buyers across Nigeria. Features real-time pool tracking, secure payments, vendor verification, and a comprehensive dashboard for both buyers and vendors. Built with modern UI/UX and seamless user experience.",
-      image:
-        "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=600&fit=crop",
+      image: "/farmshare.png",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "NestJS", "PostgreSQL"],
       links: {
         live: "https://farmshare-marketplace.vercel.app",
@@ -46,8 +44,7 @@ export default function Projects() {
       title: "Fitnessspace Platform",
       description:
         "Comprehensive wellness platform enabling users to track fitness goals, access personalized workout plans, and connect with trainers. Serving 50K+ active users with real-time analytics and AI-powered recommendations.",
-      image:
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      image: "/fitnessspace.png",
       tags: ["Node.js", "MongoDB", "Redis", "AWS", "AI/ML"],
       links: {
         live: "https://getfitness.space",
@@ -65,8 +62,7 @@ export default function Projects() {
       title: "Yarna Cross-Platform Suite",
       description:
         "Full-stack development of multiple applications across fintech and e-commerce domains. Built scalable backend systems and responsive frontends serving 200,000+ users globally.",
-      image:
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
+      image: "/yarna.png",
       tags: ["React", "React Native", "Node.js", "MongoDB", "GCP"],
       links: { live: "https://yarnaclient.onrender.com" },
       stats: [
