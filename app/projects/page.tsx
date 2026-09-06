@@ -6,7 +6,7 @@ import { createPageMetadata } from "@/components/seo";
 
 export const metadata = createPageMetadata({
   title: "Projects — AI, Fullstack & Product Engineering",
-  description: "Explore 10 selected projects by Kingsley Onuorah, including AERA, Fitness Space, FarmSat, BorderMind AI, ChangeLedger and Edu Learning & Immersion.",
+  description: "Explore 9 selected projects by Kingsley Onuorah, including AERA, Fitness Space, Ajo Cash, FarmSat, BorderMind AI, ChangeLedger and Edu Learning & Immersion.",
   path: "/projects",
 });
 

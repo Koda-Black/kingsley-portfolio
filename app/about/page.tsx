@@ -5,7 +5,7 @@ import { createPageMetadata } from "@/components/seo";
 
 export const metadata = createPageMetadata({
   title: "About — Fullstack Engineer & Technology Co-founder",
-  description: "Meet Kingsley Onuorah, a fullstack engineer, AI builder and co-founder of AERA and Fitness Space working across scalable software, cloud systems and product development.",
+  description: "Meet Kingsley Onuorah, a fullstack engineer, AI builder and co-founder of AERA, Fitness Space and Ajo Cash working across scalable software, cloud systems and product development.",
   path: "/about",
 });
 
@@ -17,14 +17,14 @@ export default function AboutPage() {
         <div className="about-page-copy">
           <h2>I make complex systems feel clear.</h2>
           <p>I&apos;m Kingsley Onuorah, a fullstack engineer and technical leader with 4+ years of experience building production software across AI, health, fintech, agriculture, education and commerce.</p>
-          <p>I&apos;m also the co-founder of AERA and Fitness Space, where I help turn ambitious ideas into dependable products, teams and technology that can grow.</p>
+          <p>I&apos;m also the co-founder of AERA, Fitness Space and Ajo Cash, where I help turn ambitious ideas into dependable products, teams and technology that can grow.</p>
           <p>My work spans scalable APIs, cloud infrastructure, AI agents, responsive interfaces and the product decisions that make technology useful to real people.</p>
           <div className="skill-row">{["Node.js", "TypeScript", "Next.js", "PostgreSQL", "MongoDB", "AWS", "AI / ML", "System design"].map((skill) => <span key={skill}>{skill}</span>)}</div>
         </div>
       </div>
       <section className="founder-platforms" aria-labelledby="founder-platforms-title">
         <div className="founder-platforms-heading">
-          <span>Co-founder / 02 platforms</span>
+          <span>Co-founder / 03 platforms</span>
           <h2 id="founder-platforms-title">Companies I&apos;m building.</h2>
         </div>
         <div className="founder-platform-grid">
@@ -66,6 +66,27 @@ export default function AboutPage() {
               <div>
                 <dt>Vision</dt>
                 <dd>A world where personalized guidance, community and accountability make healthier living accessible every day.</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article className="founder-platform-card ajo-platform-card">
+            <div className="founder-platform-topline">
+              <span>03 / Financial technology</span>
+              <a href="https://www.ajo.cash" target="_blank" rel="noreferrer" aria-label="Visit Ajo Cash">
+                <ArrowUpRight aria-hidden="true" />
+              </a>
+            </div>
+            <h3>Ajo Cash</h3>
+            <p className="founder-role">Co-founder</p>
+            <dl>
+              <div>
+                <dt>Mission</dt>
+                <dd>Bring Nigerian rotating savings groups online with automatic contributions, instant payouts and AI-powered trust.</dd>
+              </div>
+              <div>
+                <dt>Vision</dt>
+                <dd>Scale the trust behind community finance so savings groups across Africa can work securely and reliably from anywhere.</dd>
               </div>
             </dl>
           </article>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Kingsley Onuorah",
   },
   description:
-    "Portfolio of Kingsley Onuorah, a fullstack engineer, AI builder and co-founder of AERA and Fitness Space building scalable products across health, fintech, agriculture and education.",
+    "Portfolio of Kingsley Onuorah, a fullstack engineer, AI builder and co-founder of AERA, Fitness Space and Ajo Cash building scalable products across health, fintech, agriculture and education.",
   applicationName: "Kingsley Onuorah Portfolio",
   creator: "Kingsley Onuorah",
   publisher: "Kingsley Onuorah",
@@ -71,7 +71,7 @@ const structuredData = {
       url: siteUrl,
       image: `${siteUrl}/kingsley-onuorah.png`,
       jobTitle: ["Fullstack Engineer", "AI Builder", "Technology Co-founder"],
-      description: "Fullstack engineer, AI builder and co-founder of AERA and Fitness Space.",
+      description: "Fullstack engineer, AI builder and co-founder of AERA, Fitness Space and Ajo Cash.",
       email: "mailto:kingsley4onuorah@gmail.com",
       sameAs: ["https://github.com/Koda-Black", "https://linkedin.com/in/kodablack"],
       homeLocation: { "@type": "Place", name: "Enugu, Nigeria" },
@@ -79,6 +79,7 @@ const structuredData = {
       worksFor: [
         { "@id": "https://www.aera.llc/#organization" },
         { "@id": "https://getfitness.space/#organization" },
+        { "@id": "https://ajo.cash/#organization" },
       ],
     },
     {
@@ -96,6 +97,14 @@ const structuredData = {
       url: "https://getfitness.space",
       founder: { "@id": `${siteUrl}/#person` },
       description: "A science-backed wellness platform using personalized AI coaching, community and accountability to support sustainable weight loss.",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ajo.cash/#organization",
+      name: "Ajo Cash",
+      url: "https://www.ajo.cash",
+      founder: { "@id": `${siteUrl}/#person` },
+      description: "Digital trust infrastructure for Nigerian rotating savings groups with automatic contributions, instant payouts and AI-powered trust.",
     },
   ],
 };
