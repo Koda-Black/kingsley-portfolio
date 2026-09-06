@@ -200,6 +200,24 @@ button { color: inherit; font: inherit; }
 .about-page-copy h2 { margin: 0 0 30px; font-size: clamp(48px,6vw,96px); line-height: .9; letter-spacing: -.06em; }
 .about-page-copy p { max-width: 720px; color: #c9c9c3; font-size: 17px; line-height: 1.6; }
 .about-page-copy .skill-row span { border-color: white; }
+.founder-platforms { margin-top: clamp(70px, 9vw, 140px); }
+.founder-platforms-heading { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(35px,7vw,110px); margin-bottom: 42px; align-items: end; }
+.founder-platforms-heading > span { color: #bcbcb7; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.founder-platforms-heading h2 { margin: 0; max-width: 850px; font-size: clamp(48px,6vw,92px); line-height: .9; letter-spacing: -.06em; }
+.founder-platform-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.founder-platform-card { min-height: 540px; padding: clamp(26px,3.5vw,52px); border-radius: var(--radius); color: var(--ink); display: flex; flex-direction: column; }
+.aera-platform-card { background: var(--lavender); }
+.fitness-platform-card { background: var(--orange); }
+.founder-platform-topline { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.founder-platform-topline a { width: 46px; height: 46px; border: 1px solid currentColor; border-radius: 50%; display: grid; place-items: center; transition: transform .25s ease, background .25s ease, color .25s ease; }
+.founder-platform-topline a:hover { transform: rotate(45deg); background: var(--ink); color: white; }
+.founder-platform-topline svg { width: 19px; }
+.founder-platform-card h3 { margin: auto 0 0; font-size: clamp(56px,6.3vw,104px); line-height: .84; letter-spacing: -.07em; }
+.founder-platform-card .founder-role { margin: 15px 0 42px; color: currentColor; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.founder-platform-card dl { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; border-top: 1px solid rgba(22,22,20,.3); padding-top: 26px; }
+.founder-platform-card dl div { display: grid; gap: 8px; }
+.founder-platform-card dt { font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.founder-platform-card dd { margin: 0; font-size: 14px; line-height: 1.52; }
 .inner-timeline { border-top-color: white; }
 .inner-timeline article { border-bottom-color: #363634; }
 .inner-timeline article p { color: #bcbcb7; }
@@ -267,6 +285,8 @@ button { color: inherit; font: inherit; }
   .inner-hero h1 { font-size: clamp(62px, 15vw, 110px); }
   .about-page-grid { grid-template-columns: 1fr; }
   .about-page-image { min-height: 560px; }
+  .founder-platforms-heading { grid-template-columns: 1fr; }
+  .founder-platform-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
@@ -303,6 +323,8 @@ button { color: inherit; font: inherit; }
   .inner-content { padding-top: 60px; padding-bottom: 80px; }
   .about-page-grid { grid-template-columns: 1fr; }
   .about-page-image { min-height: 520px; }
+  .founder-platform-card { min-height: 500px; }
+  .founder-platform-card dl { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 }
 

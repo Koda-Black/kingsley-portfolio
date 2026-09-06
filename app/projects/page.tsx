@@ -2,6 +2,13 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import PageFrame from "@/components/PageFrame";
 import { projects } from "@/components/content";
+import { createPageMetadata } from "@/components/seo";
+
+export const metadata = createPageMetadata({
+  title: "Projects — AI, Fullstack & Product Engineering",
+  description: "Explore 10 selected projects by Kingsley Onuorah, including AERA, Fitness Space, FarmSat, BorderMind AI, ChangeLedger and Edu Learning & Immersion.",
+  path: "/projects",
+});
 
 export default function ProjectsPage() {
   return (

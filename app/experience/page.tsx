@@ -1,4 +1,11 @@
 import PageFrame from "@/components/PageFrame";
+import { createPageMetadata } from "@/components/seo";
+
+export const metadata = createPageMetadata({
+  title: "Experience — Fullstack Engineering & Technical Leadership",
+  description: "Kingsley Onuorah's experience in fullstack engineering, AI systems, technical leadership and product delivery across health, fintech and venture building.",
+  path: "/experience",
+});
 
 const roles = [
   { period: "2023 — Present", title: "Co-founder & Chief Technology Officer", company: "Fitness Space", copy: "Engineering scalable wellness infrastructure and intelligent, context-aware experiences that preserve accountability as the product grows." },
