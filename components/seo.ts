@@ -18,13 +18,13 @@ export function createPageMetadata({ title, description, path }: PageMetadata): 
       type: "website",
       siteName: "Kingsley Onuorah Portfolio",
       locale: "en_NG",
-      images: [{ url: "/og.png", width: 1200, height: 630, alt: "Kingsley Onuorah portfolio" }],
+      images: [{ url: "/portfolio-preview.jpg", width: 1440, height: 756, type: "image/jpeg", alt: "Kingsley Onuorah's portfolio homepage with portrait, selected projects and journal" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og.png"],
+      images: [{ url: "/portfolio-preview.jpg", alt: "Kingsley Onuorah's portfolio homepage with portrait, selected projects and journal" }],
     },
   };
 }

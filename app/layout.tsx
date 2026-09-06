@@ -19,18 +19,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title: "Kingsley Onuorah | Fullstack Engineer, AI Builder & Co-founder",
-    description: "Explore the products, systems and ideas Kingsley Onuorah engineers for real-world scale.",
+    description: "Fullstack engineer, AI builder and co-founder of AERA, Fitness Space and Ajo Cash. Explore my projects and writing.",
     type: "website",
     url: "/",
     siteName: "Kingsley Onuorah Portfolio",
     locale: "en_NG",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Kingsley Onuorah portfolio" }],
+    images: [{ url: "/portfolio-preview.jpg", width: 1440, height: 756, type: "image/jpeg", alt: "Kingsley Onuorah's portfolio homepage with portrait, selected projects and journal" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kingsley Onuorah | Fullstack Engineer, AI Builder & Co-founder",
-    description: "Explore the products, systems and ideas Kingsley Onuorah engineers for real-world scale.",
-    images: ["/og.png"],
+    description: "Fullstack engineer, AI builder and co-founder of AERA, Fitness Space and Ajo Cash. Explore my projects and writing.",
+    images: [{ url: "/portfolio-preview.jpg", alt: "Kingsley Onuorah's portfolio homepage with portrait, selected projects and journal" }],
   },
   robots: {
     index: true,
