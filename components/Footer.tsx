@@ -13,7 +13,7 @@ export default function Footer() {
       icon: Linkedin,
     },
     { name: "GitHub", href: "https://github.com/Koda-Black", icon: Github },
-    { name: "Email", href: "mailto:kodablack.me@outlook.com", icon: Mail },
+    { name: "Email", href: "mailto:kingsley4onuorah@gmail.com", icon: Mail },
   ];
 
   const quickLinks = [
@@ -85,10 +85,10 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-gray-600 dark:text-gray-400">
               <li>
                 <a
-                  href="mailto:kodablack.me@outlook.com"
+                  href="mailto:kingsley4onuorah@gmail.com"
                   className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
                 >
-                  kodablack.me@outlook.com
+                  kingsley4onuorah@gmail.com
                 </a>
               </li>
               <li>

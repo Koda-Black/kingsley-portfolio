@@ -46,8 +46,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "kodablack.me@outlook.com",
-      href: "mailto:kodablack.me@outlook.com",
+      value: "kingsley4onuorah@gmail.com",
+      href: "mailto:kingsley4onuorah@gmail.com",
     },
     {
       icon: Phone,

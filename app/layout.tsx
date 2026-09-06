@@ -1,40 +1,32 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/components/ThemeProvider";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Kingsley Onuorah | Fullstack Engineer",
-  description: "Backend/Fullstack Engineer with 4+ years of experience in Node.js, cloud architecture, and AI/ML integration. Delivering scalable solutions across fintech, wellness, and SaaS domains.",
-  keywords: ["Fullstack Engineer", "Backend Developer", "Node.js", "AWS", "Cloud Architecture", "AI/ML"],
-  authors: [{ name: "Kingsley Onuorah" }],
+  metadataBase: new URL("https://kingsley-portfolio-omega.vercel.app"),
+  title: "Kingsley Onuorah — Fullstack Engineer & AI Builder",
+  description:
+    "Selected products, engineering work and writing by Kingsley Onuorah — a fullstack engineer building AI-powered, scalable software.",
+  keywords: ["Kingsley Onuorah", "Fullstack Engineer", "Backend Engineer", "AI Engineer", "Node.js", "Cloud Architecture"],
+  authors: [{ name: "Kingsley Onuorah", url: "https://linkedin.com/in/kodablack" }],
   openGraph: {
-    title: "Kingsley Onuorah | Fullstack Engineer",
-    description: "Backend/Fullstack Engineer with 4+ years of experience in Node.js, cloud architecture, and AI/ML integration.",
+    title: "Kingsley Onuorah — Fullstack Engineer & AI Builder",
+    description: "Products, systems and ideas engineered for real-world scale.",
     type: "website",
+    url: "/",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Kingsley Onuorah portfolio" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kingsley Onuorah — Fullstack Engineer & AI Builder",
+    description: "Products, systems and ideas engineered for real-world scale.",
+    images: ["/og.png"],
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
-        <ThemeProvider>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
