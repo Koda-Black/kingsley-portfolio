@@ -207,7 +207,7 @@ button { color: inherit; font: inherit; }
 .founder-platform-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .founder-platform-card { min-height: 540px; padding: clamp(26px,3.5vw,52px); border-radius: var(--radius); color: var(--ink); display: flex; flex-direction: column; }
 .aera-platform-card { background: var(--lavender); }
-.fitness-platform-card { background: var(--orange); }
+.fitness-platform-card { background: var(--coral); }
 .ajo-platform-card { background: var(--purple); color: white; }
 .founder-platform-topline { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .founder-platform-topline a { width: 46px; height: 46px; border: 1px solid currentColor; border-radius: 50%; display: grid; place-items: center; transition: transform .25s ease, background .25s ease, color .25s ease; }
